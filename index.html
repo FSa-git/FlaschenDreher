@@ -7,6 +7,15 @@
     <title>Spin the bottle 🍾</title>
 </head>
 <body>
+    <div id="sidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Bottle1</a>
+        <a href="#">Bottle2</a>
+        <a href="#">Finger2</a>
+        <a href="#">Arrow3</a>
+        <a href="#">Credits</a>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
     <h1>Spin the bottle!</h1>
     <div id="container">
         <h2>Your turn!</h2>
@@ -17,6 +26,16 @@
     <div class="spinButton">
         <button id="spinButton">Spin</button>
     </div>
+    <footer></footer>
 </body>
 <script src="js/spinBottle.js"></script>
+<script>
+    function openNav() {
+        document.getElementById("sidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("sidenav").style.width = "0";
+    }
+</script>
 </html>

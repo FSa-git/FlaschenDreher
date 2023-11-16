@@ -23,10 +23,10 @@ body {
 
 #container {
     text-align: center;
-    background-color: rgba(128, 128, 128, 0.515);
+    background-color: rgba(128, 128, 128, 0.311);
     border-radius: 10%;
     width: 500px;
-    height: auto;
+    height: 500px;
 }
 
 h1 {
@@ -50,4 +50,10 @@ button:hover {
 
 .spinButton {
     margin-top: 50px;
+}
+
+#bottle {
+    width: 250px;
+    height: 250px;
+    transition: transform 3000ms ease-in-out;
 }

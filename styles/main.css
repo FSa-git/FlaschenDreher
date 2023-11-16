@@ -3,6 +3,76 @@
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Balthazar&family=Encode+Sans+SC:wght@500&family=Jost&family=Nanum+Gothic+Coding&family=Sriracha&display=swap');
 
+/* Media Queries */
+/* Phone view */
+@media only screen and (max-width: 600px) {
+    #container {
+        width: 90%; /* Adjust as needed */
+        height: auto;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    button {
+        width: 200px;
+        height: 60px;
+        font-size: 20px;
+    }
+}
+
+/* Tablet view */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    #container {
+        width: 80%; /* Adjust as needed */
+        height: auto;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    button {
+        width: 250px;
+        height: 70px;
+        font-size: 25px;
+    }
+}
+
+/* Desktop view */
+@media only screen and (min-width: 1025px) {
+    #container {
+        width: 70%; /* Adjust as needed */
+        height: auto;
+        padding: 40px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    button {
+        width: 300px;
+        height: 80px;
+        font-size: 30px;
+    }
+}
+
 *{
     font-family: 'Balthazar', serif;
 font-family: 'Encode Sans SC', sans-serif;
@@ -17,7 +87,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-self: center;
+    justify-content: center;
     align-items: center;
 }
 
@@ -27,11 +97,17 @@ body {
     border-radius: 10%;
     width: 500px;
     height: 500px;
+    padding: 50px;
 }
 
 h1 {
     order: -1;
     color: white;
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 30px;
 }
 
 button {
@@ -39,21 +115,22 @@ background-color: rgb(131, 30, 30);
 border: none;
 border-radius: 100px;
 width: 250px;
-height: 50px;
+height: 80px;
 font-size: 30px;
 color: white;
 }
 
 button:hover {
     background-color: rgb(153, 62, 62);
+    cursor: pointer;
 }
 
 .spinButton {
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 #bottle {
-    width: 250px;
-    height: 250px;
+    width: 400px;
+    height: 400px;
     transition: transform 3000ms ease-in-out;
 }

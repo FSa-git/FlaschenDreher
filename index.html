@@ -7,26 +7,16 @@
     <title>Spin the bottle 🍾</title>
 </head>
 <body>
-    <h1 class="title">Spin the bottle!</h1>
+    <h1>Spin the bottle!</h1>
     <div id="container">
         <h2>Your turn!</h2>
-        <div class="bottle-wrap">
+        <div>
             <img id="bottle" src="../img/red-wine.png" alt="spin bottle">
         </div>
     </div>
     <div class="spinButton">
-        <button id="btn" class="btn">Spin</button>
+        <button id="spinButton">Spin</button>
     </div>
-    <script>
-        let angle = 0;
-        const bottle = document.querySelector('#bottle');
-        const btn = document.querySelector('#btn');
-
-        btn.addEventListener('click', function () {
-            angle = angle + 4 * 360 + Math.random() * 360;
-            bottle.style.transform = `rotate(${angle}deg)`;
-        });
-    </script>
 </body>
 <script src="js/spinBottle.js"></script>
 </html>

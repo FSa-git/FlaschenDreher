@@ -4,18 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
     <title>Spin the bottle 🍾</title>
 </head>
 <body>
-    <div id="sidenav" class="sidenav">
+    <label>
+        <input type="checkbox">
+        <div class="toggle">
+            <span class="top_line common"></span>
+            <span class="middle_line common"></span>
+            <span class="bottom_line common"></span>
+        </div>
+        <div class="slide">
+            <h1>MENU</h1>
+            <ul>
+                <li><a href="#"><i class="">dashboard</i></a></li>
+                <li><a href="#"><i class="">dashboard</i></a></li>
+                <li><a href="#"><i class="">dashboard</i></a></li>
+                <li><a href="#"><i class="">dashboard</i></a></li>
+                <li><a href="#"><i class="">dashboard</i></a></li>
+            </ul>
+        </div>
+    </label>
+    <!-- <div id="sidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#">Bottle1</a>
         <a href="#">Bottle2</a>
         <a href="#">Finger2</a>
         <a href="#">Arrow3</a>
         <a href="#">Credits</a>
-    </div>
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    </div> -->
+    <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span> -->
     <h1>Spin the bottle!</h1>
     <div id="container">
         <h2>Your turn!</h2>
@@ -30,7 +49,7 @@
     <footer></footer>
 </body>
 <script src="js/spinBottle.js"></script>
-<script>
+<!-- <script>
     function openNav() {
         document.getElementById("sidenav").style.width = "250px";
     }
@@ -38,5 +57,5 @@
     function closeNav() {
         document.getElementById("sidenav").style.width = "0";
     }
-</script>
+</script> -->
 </html>

@@ -1,51 +1,11 @@
-/* Sidebar css Styles */
+#settingWheel {
+    background-color: rgba(0, 0, 0, 0.495);
+    border-radius: 15px;
+    width: 50px;
+    height: 50px;
 
-.slide {
-    height: 100%;
-    width: 180px;
-    position: absolute;
-    background-color: #fff;
-    transition: 0.5s ease;
-}
-
-ul li {
-    list-style: none;
-}
-
-ul li a {
-    color: black;
-    padding: 5px 0;
-    display: block;
-    transition: 0.2 ease;
-}
-
-ul li a i {
-    width: 40px;
-    text-align: center;
-}
-
-input {
-    display: none;
-    visibility: hidden;
-    -webkit-appearance: none;
-}
-
-.toggle {
-    position: absolute;
-    height: 30px;
-    width: 30px;
-    z-index: 1;
-    cursor: pointer;
-    top: 20px;
-    left: 15px;
-    border-radius: 2px;
-    background-color: red;
-}
-
-.toggle .common {
-
-    position: absolute;
-    background-color: blueviolet;
-    
-
+    /* To put the icon in the center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

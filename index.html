@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/selection.css">
     <title>Spin the bottle 🍾</title>
 </head>
 <body>
@@ -40,11 +41,27 @@
         <h2>Your turn!</h2>
         <div>
             <img id="bottle" src="img/pointing.png" alt="spin bottle">
-            <!-- <img id="bottle" src="../img/red-wine.png" alt="spin bottle"> -->
         </div>
     </div>
     <div class="spinButton">
         <button id="spinButton">Spin</button>
+    </div>
+    <div class="selection">
+        <h2>Customize your Spin</h2>
+        <div class="selectionContainer">
+            <div class="selectionItem" onclick="changeBottleImage('img/pointing.png')">
+                <img src="img/pointing.png" alt="spin bottle">
+            </div>
+            <div class="selectionItem" onclick="changeBottleImage('img/red-wine-312731_1280.png')">
+                <img src="img/red-wine-312731_1280.png" alt="spin bottle">
+            </div>
+            <div class="selectionItem" onclick="changeBottleImage('img/red-wine.png')">
+                <img src="img/red-wine.png" alt="Finger">
+            </div>
+            <div class="selectionItem" onclick="changeBottleImage('img/runter.png')">
+                <img src="img/runter.png" alt="Arrow">
+            </div>
+        </div>
     </div>
     <footer></footer>
 </body>
@@ -58,4 +75,9 @@
         document.getElementById("sidenav").style.width = "0";
     }
 </script> -->
+<script>
+    function changeBottleImage(newSrc) {
+        document.getElementById('bottle').src = newSrc;
+    }
+</script>
 </html>

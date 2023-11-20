@@ -5,13 +5,19 @@
 
 .selectionContainer {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    flex-direction: column; /* row, would be horizontal */
+    justify-content: center;
+    align-items: flex-end;
  }
 
  .selection {
     background-color: rgba(0, 0, 0, 0.495);
-    width: 100%;
+    width: 20%;
+    max-width: 200px;
     margin-top: 50px;
     display: none;
 }

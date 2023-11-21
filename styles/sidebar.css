@@ -1,11 +1,63 @@
 #settingWheel {
     background-color: rgba(0, 0, 0, 0.495);
     border-radius: 15px;
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
 
     /* To put the icon in the center */
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+.settings {
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;    
+}
+
+.selectionItem img {
+    width: 100px;
+    height: 100px;
+    margin: 10px 0 10px 0;
+}
+
+.selectionContainer {
+    display: flex;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 40%;
+    height: 100%;
+    flex-direction: column; /* row, would be horizontal */
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.495);
+ }
+
+ .selection {
+    width: 40%;
+    max-width: 200px;
+    margin-top: 50px;
+    display: none;
+    position: relative;
+}
+
+.soundEffects{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bi {
+    transition: all 0.5s;
+    transform: rotate(0deg); 
+}
+
+.bi:hover {
+    transform: rotate(40deg);
 }

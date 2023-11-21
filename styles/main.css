@@ -138,3 +138,8 @@ button:hover {
     height: 400px;
     transition: transform 3000ms ease-in-out;
 }
+
+.aboutPage{
+    background-color: rgba(0, 0, 0, 0.495);
+    padding: 40px 35px 40px 35px;
+}

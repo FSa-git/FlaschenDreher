@@ -16,6 +16,8 @@ let rotationDirection = 1; // 1 für Uhrzeigersinn, -1 für gegen den Uhrzeigers
 function spinBottle(bottleId) {
     console.log("Bottle spun!");
 
+    disableHomeTitle();
+
     // Get the bottle element
     let bottle = document.getElementById(bottleId);
     bottle.style.transition = 'transform 2s ease-in-out';
@@ -34,6 +36,27 @@ function spinBottle(bottleId) {
 
         setTimeout(function () {
             bottle.style.transition = '';
+            yourTurnEffect();
         }, 2000);
     }, 200);
+}
+
+function yourTurnEffect() {
+
+    let text = document.getElementById('yourTurn');
+    text.style.transition = 'transform 0.3s ease-in-out';
+    text.style.transform = 'scale(1.7)';
+
+    // Set the transform style back to normal after 0.3s
+    setTimeout(function () {
+        text.style.transform = 'scale(1)';
+    }, 300);
+}
+
+function disableHomeTitle() {
+
+    let textTitle = document.getElementById('homeTitle');
+    textTitle.style.transition = 'transform 0.3s ease-in-out';
+    textTitle.style.transform = 'scale(0)';
+
 }

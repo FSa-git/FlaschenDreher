@@ -1,6 +1,6 @@
 /** JS-File to select the language */
 
-function changeLanguage(languageCode) {
+function changeLanguage(languageCode, element) {
 
 if (languageCode === 'en'){
     document.getElementById('homeTitle').innerText = 'Spin the bottle!';
@@ -20,5 +20,11 @@ else if (languageCode === 'it') {
     document.getElementById('spinButton').innerText = 'Gira';
     document.getElementById('aboutText').innerText = 'Il progetto';
 }
+
+var items = document.getElementsByClassName('language–item');
+    for (var i = 0; i < items.length; i++) {
+        items[i].classList.remove('selected');
+    }
+    element.classList.add('selected');
 
 }

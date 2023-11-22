@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/sidebar.css">
+    <style>
+        .selected {
+            transform: scale(1.5);
+        }
+    </style>
     <title>Spin the bottle 🍾</title>
 </head>
 <body>
@@ -82,13 +87,13 @@
     <!--ANCHOR Language-Selection -->
     <div class="languages">
         <div class="languagesContainer">
-            <div class="language–item" onclick="changeLanguage('en')">
+            <div class="language–item" onclick="changeLanguage('en', this)">
                 <img src="img/united-kingdom.png" alt="English">
             </div>
-            <div class="language–item" onclick="changeLanguage('de')">
+            <div class="language–item" onclick="changeLanguage('de', this)">
                 <img src="img/germany.png" alt="German">
             </div>
-            <div class="language–item" onclick="changeLanguage('it')">
+            <div class="language–item" onclick="changeLanguage('it', this)">
                 <img src="img/italy.png" alt="Italian">
             </div>
         </div>

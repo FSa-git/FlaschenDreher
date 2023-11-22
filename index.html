@@ -34,8 +34,10 @@
     </div>
 
     <!--ANCHOR Main Part-->
+    <!--NOTE Word to translate-->
     <h1 id="homeTitle">Spin the bottle!</h1>
     <div id="container">
+        <!--NOTE Word to translate-->
         <h2 id="yourTurn">Your turn!</h2>
         <div>
             <img id="bottle" src="img/red-wine.png" alt="spin bottle">
@@ -44,6 +46,7 @@
     
     <!--ANCHOR Spin-Button -->
     <div class="spinButton">
+        <!--NOTE Word to translate-->
         <button id="spinButton">Spin</button>
     </div>
 
@@ -63,7 +66,8 @@
                 <img src="img/runter.png" alt="Arrow" style="rotate: 90deg;">
             </div>
             <div style="margin-top: 50px">
-                <a href="about.html">About</a>
+                <!--NOTE Word to translate-->
+                <a href="about.html" id="aboutText">About</a>
             </div>
             <div class="soundEffects">
                 <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" viewBox="0 0 16 16">
@@ -78,13 +82,13 @@
     <!--ANCHOR Language-Selection -->
     <div class="languages">
         <div class="languagesContainer">
-            <div class="language–item">
+            <div class="language–item" onclick="changeLanguage('en')">
                 <img src="img/united-kingdom.png" alt="English">
             </div>
-            <div class="language–item">
+            <div class="language–item" onclick="changeLanguage('de')">
                 <img src="img/germany.png" alt="German">
             </div>
-            <div class="language–item">
+            <div class="language–item" onclick="changeLanguage('it')">
                 <img src="img/italy.png" alt="Italian">
             </div>
         </div>
@@ -97,6 +101,7 @@
 </body>
 <script src="js/spinBottle.js"></script>
 <script src="js/openExtraDiv.js"></script>
+<script src="js/selectLangguage.js"></script>
 
 <script>
     function changeBottleImage(newSrc) {

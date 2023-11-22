@@ -3,11 +3,14 @@
 // Open the div-container for the settings
 document.getElementById('settingWheel').addEventListener('click', function() {
     let selectionDiv = document.querySelector('.selection');
+    let translateBtns = document.querySelectorAll('.translateSett'); // Angenommen, 'translateSett' ist eine Klasse
     if (selectionDiv.style.display === 'none' || selectionDiv.style.display === '') {
         selectionDiv.style.display = 'block';
+        translateBtns.forEach(btn => btn.style.display = 'block');
     } 
     else {
         selectionDiv.style.display = 'none';
+        translateBtns.forEach(btn => btn.style.display = 'none');
     }
 });
 

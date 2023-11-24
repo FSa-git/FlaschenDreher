@@ -1,0 +1,18 @@
+/* CSS File fort the star rating */
+h3 {
+    text-decoration: underline;
+}
+
+#ratingText {
+    text-decoration: none;
+}
+
+.star {
+    cursor: pointer;
+    transition: fill 0.2s;
+    margin: 0 7px 0 7px;
+}
+
+.star:hover {
+    filter: brightness(1.5); /* Verwende einen Hover-Effekt, um die Sterne hervorzuheben */
+}

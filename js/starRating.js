@@ -22,13 +22,13 @@ document.addEventListener("DOMContentLoaded", function() {
             if (index < rating) {
                 if (rating === 1 || rating === 2) {
                     star.style.fill = 'red';
-                    ratingText.innerHTML = "I'm sorry";
+                    ratingText.innerText = "I'm sorry";
                 } else if (rating === 3 || rating === 4) {
                     star.style.fill = 'orange';
-                    ratingText.innerHTML = 'Yes it could be better..';
+                    ratingText.innerText = 'Yes it could be better..';
                 } else {
                     star.style.fill = 'gold';
-                    ratingText.innerHTML = 'Oh, thank you so much!';
+                    ratingText.innerText = 'Oh, thank you so much!';
                 }
             } else {
                 star.style.fill = 'none';

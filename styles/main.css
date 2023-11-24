@@ -140,6 +140,7 @@ button:hover {
 }
 
 .aboutPage{
+    margin-top: 100px;
     background-color: rgba(0, 0, 0, 0.495);
     padding: 40px 35px 40px 35px;
 }

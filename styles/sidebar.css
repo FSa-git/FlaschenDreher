@@ -121,3 +121,7 @@
 .bi:hover {
     transform: rotate(40deg);
 }
+
+#aboutText {
+    font-size: 20px;
+}
